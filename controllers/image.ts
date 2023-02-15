@@ -1,8 +1,7 @@
 import { Request, Response, NextFunction } from "express";
 import axios from "axios";
 
-const API_KEY = "Fdxjut2PLSyaw5XTCeDQNYkUx7jJDR4YvSU27rJF"; // should be in a .env file but it does not matter here
-const API_LINK = `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`;
+import { NASA_API_LINK } from "../utils/constants";
 
 export async function getImage(
 	req: Request,
@@ -10,7 +9,7 @@ export async function getImage(
 	next: NextFunction
 ) {
 	try {
-		const apiRes = await axios.get(API_LINK);
+		const apiRes = await axios.get(NASA_API_LINK);
 		res.status(apiRes.status).json(apiRes.data);
 	} catch (err) {
 		next(err);

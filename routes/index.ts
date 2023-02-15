@@ -1,6 +1,7 @@
 import { Router } from "express";
 
 import imageRouter from "./image";
+import authRouter from "./auth";
 
 const router = Router();
 
@@ -9,5 +10,6 @@ router.get("/", (_, res) => {
 });
 
 router.use(imageRouter);
+router.use(authRouter);
 
 export default router;
