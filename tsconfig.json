@@ -1,35 +1,35 @@
 {
-  "extends": "@tsconfig/recommended/tsconfig.json",
-  "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "lib": ["ESNext"],
-    "allowSyntheticDefaultImports": true,
-    "allowJs": false,
-    "allowUnreachableCode": false,
-    "removeComments": true,
-    "importHelpers": true,
-    "esModuleInterop": true,
-    "strict": true,
-    "sourceMap": false,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitAny": false,
-    "noImplicitThis": false,
-    "strictNullChecks": true,
-    "outDir": "dist",
-    "baseUrl": ".",
-    "paths": {
-      "@server/*": ["src/*"],
-      "@tests/*": ["__tests__/*"],
-      "@config/*": ["src/config/*"],
-      "@domain/*": ["src/domain/*"],
-      "@controllers/*": ["src/controllers/*"],
-      "@middlewares/*": ["src/middlewares/*"]
-    }
-  },
-  "exclude": ["node_modules", "build"]
+	"extends": "@tsconfig/recommended/tsconfig.json",
+	"compilerOptions": {
+		"target": "es6",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"lib": ["ESNext"],
+		"allowSyntheticDefaultImports": true,
+		"allowJs": false,
+		"allowUnreachableCode": false,
+		"removeComments": true,
+		"importHelpers": true,
+		"esModuleInterop": true,
+		"strict": true,
+		"sourceMap": false,
+		"forceConsistentCasingInFileNames": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": false,
+		"noImplicitAny": false,
+		"noImplicitThis": false,
+		"strictNullChecks": true,
+		"outDir": "dist",
+		"baseUrl": ".",
+		"paths": {
+			"@server/*": ["src/*"],
+			"@tests/*": ["__tests__/*"],
+			"@config/*": ["src/config/*"],
+			"@domain/*": ["src/domain/*"],
+			"@controllers/*": ["src/controllers/*"],
+			"@middlewares/*": ["src/middlewares/*"]
+		}
+	},
+	"exclude": ["node_modules", "build"]
 }
