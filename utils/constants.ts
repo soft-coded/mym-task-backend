@@ -13,7 +13,7 @@ export const DB_URL =
 
 // export const CLIENT_ORIGIN = "http://localhost:3000";
 // export const SERVER_ORIGIN = "http://localhost:5000";
-export const CLIENT_ORIGIN = "https://mym-task-frontend.vercel.app/login";
+export const CLIENT_ORIGIN = "https://mym-task-frontend.vercel.app";
 export const SERVER_ORIGIN = "https://mym-task-backend.onrender.com";
 
 export const GOOGLE_OAUTH_CREDENTIALS = {
