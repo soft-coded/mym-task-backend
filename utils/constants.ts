@@ -7,10 +7,14 @@ export const NASA_API_LINK = `https://api.nasa.gov/planetary/apod?api_key=${NASA
 
 export const JWT_SECRET_KEY = "this_is_the_jwt_secret";
 
-export const DB_URL = "mongodb://localhost:27017/mym-task-db";
+// export const DB_URL = "mongodb://localhost:27017/mym-task-db";
+export const DB_URL =
+	"mongodb+srv://mym-task-admin:mym-task-password@mym-task.6y2ifxm.mongodb.net/?retryWrites=true&w=majority";
 
-export const CLIENT_ORIGIN = "http://localhost:3000";
-export const SERVER_ORIGIN = "http://localhost:5000";
+// export const CLIENT_ORIGIN = "http://localhost:3000";
+// export const SERVER_ORIGIN = "http://localhost:5000";
+export const CLIENT_ORIGIN = "https://mym-task-frontend.vercel.app/login";
+export const SERVER_ORIGIN = "https://mym-task-backend.onrender.com";
 
 export const GOOGLE_OAUTH_CREDENTIALS = {
 	client_id:
