@@ -9,6 +9,16 @@ export const JWT_SECRET_KEY = "this_is_the_jwt_secret";
 
 export const DB_URL = "mongodb://localhost:27017/mym-task-db";
 
+export const GOOGLE_OAUTH_CREDENTIALS = {
+	client_id:
+		"771787417767-sa2spmpoblvcl6ob10ejijn4ogofnrmu.apps.googleusercontent.com",
+	project_id: "mym-task",
+	auth_uri: "https://accounts.google.com/o/oauth2/auth",
+	token_uri: "https://oauth2.googleapis.com/token",
+	auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs",
+	client_secret: "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"
+};
+
 // types are also defined in this file to save time
 export type UserType = {
 	email: string;
