@@ -9,6 +9,7 @@ export const JWT_SECRET_KEY = "this_is_the_jwt_secret";
 
 export const DB_URL = "mongodb://localhost:27017/mym-task-db";
 
+export const CLIENT_ORIGIN = "http://localhost:3000";
 export const SERVER_ORIGIN = "http://localhost:5000";
 
 export const GOOGLE_OAUTH_CREDENTIALS = {
