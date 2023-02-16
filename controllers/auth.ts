@@ -52,6 +52,17 @@ export async function login(req: Request, res: Response, next: NextFunction) {
 	}
 }
 
+type GoogleUserType = {
+	email: string;
+	email_verified: boolean;
+	name: string;
+	picture: string; // pfp link,
+	given_name: string;
+	locale: string;
+	iat: number;
+	exp: number;
+};
+
 export async function googleOAuth(
 	req: Request,
 	res: Response,
@@ -76,7 +87,7 @@ export async function googleOAuth(
 
 		// const { id_token, access_token } = axiosRes.data;
 		const { id_token } = axiosRes.data;
-		const googleUser = jwt.decode(id_token);
+		const googleUser = jwt.decode(id_token) as GoogleUserType;
 		console.log("\n\n\n\n googleUser:", googleUser, "\n\n\n\n");
 	} catch (err) {
 		console.error(err);
