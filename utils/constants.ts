@@ -1,5 +1,5 @@
 /**
- * In other circumstances, this would be a .env file with all the required environment variable. But since it does not matter for this app, I am just using a normal typescript file for all the required variables.
+ * In other circumstances, this would be a .env file with all the required environment variables. But since it does not matter for this app, I am just using a normal typescript file for all the same purpose.
  */
 
 export const NASA_API_KEY = "Fdxjut2PLSyaw5XTCeDQNYkUx7jJDR4YvSU27rJF";
