@@ -7,6 +7,8 @@ export const NASA_API_LINK = `https://api.nasa.gov/planetary/apod?api_key=${NASA
 
 export const JWT_SECRET_KEY = "this_is_the_jwt_secret";
 
+export const DB_URL = "mongodb://localhost:27017/mym-task-db";
+
 // types are also defined in this file to save time
 export type UserType = {
 	email: string;
