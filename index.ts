@@ -36,3 +36,5 @@ app.use("*", () => {
 app.use(handleError);
 
 app.listen(process.env.PORT || 5000, () => console.log("Server started"));
+
+export default app;
